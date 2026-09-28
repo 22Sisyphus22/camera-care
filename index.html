@@ -6,19 +6,17 @@
 <title>Camera Care | Body Guard home safety system for elderly loved ones</title>
 <meta name="description" content="Body Guard links SOS buttons and a pendant to a home camera, so one press alerts your phone and dials family. £129.99 one-off, no monthly fees. Plus SOS smart watches for out and about.">
 <link rel="canonical" href="https://www.cameracare.uk/">
-<meta property="og:title" content="Camera Care | Helping loved ones stay independent at home">
+<meta property="og:title" content="Camera Care | One press and the family knows">
 <meta property="og:description" content="Body Guard home safety system: SOS buttons, pendant and camera with instant alerts to your phone. £129.99 one-off, no monthly fees.">
 <meta property="og:image" content="https://www.cameracare.uk/images/bodyguard-elderly.webp">
 <meta property="og:url" content="https://www.cameracare.uk/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#14284B">
+<meta name="theme-color" content="#0E1F3F">
 <link rel="icon" href="images/home-camera-care-logo-02.webp">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,223 +39,259 @@
   ]
 }
 </script>
-
 <style>
 :root{
-  --plum:#14284B;
-  --navy-deep:#0C1A33;
+  --navy:#0E1F3F;
+  --navy-2:#162D57;
+  --navy-deep:#081329;
+  --ink:#1D2A40;
+  --soft:#56627A;
+  --sky:#DDEBFA;
+  --sky-2:#B9D6F5;
   --sun:#FFC93C;
-  --ink:#2E3A4F;
-  --soft:#5E6B80;
-  --paper:#FFFFFF;
-  --mist:#EAF2FA;
-  --line:#D6E2EE;
-  --sos:#D62B2F;
-  --sos-dark:#B21F24;
-  --heather:#1F6FB2;
-  --ok:#2F7D5B;
+  --sun-2:#FFE08A;
+  --sos:#E0262B;
+  --sos-dark:#A8161B;
+  --blue:#1F6FB2;
+  --white:#fff;
   --ring:conic-gradient(from 200deg,#E4007C,#F39200,#FFD100,#76B82A,#009FE3,#5B2D90,#E4007C);
-  --r-s:10px; --r-m:18px;
-  --wrap:1180px;
   --display:"Nunito",ui-rounded,"Arial Rounded MT Bold",system-ui,sans-serif;
   --body:"Atkinson Hyperlegible",Verdana,system-ui,sans-serif;
+  --wrap:1240px;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:88px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;font-family:var(--body);font-size:1.1875rem;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--body);font-size:1.1875rem;line-height:1.6;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
-a{color:var(--heather)}
-a:hover{color:var(--plum)}
-:focus-visible{outline:3px solid var(--heather);outline-offset:3px;border-radius:4px}
-h1,h2,h3{font-family:var(--display);color:var(--plum);line-height:1.15;margin:0 0 .5em;font-weight:800}
-h1{font-size:clamp(2.3rem,5.2vw,3.9rem);letter-spacing:-.02em;font-weight:900}
-h2{font-size:clamp(1.9rem,3.6vw,2.75rem);letter-spacing:-.015em}
-h3{font-size:1.4rem}
-p{margin:0 0 1em;max-width:62ch}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0 0 .45em;font-weight:900;letter-spacing:-.025em;color:var(--navy)}
+h2{font-size:clamp(2.4rem,6vw,4.75rem)}
+h3{font-size:1.5rem;line-height:1.15;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:60ch}
 .wrap{width:min(100% - 2.5rem,var(--wrap));margin-inline:auto}
-.skip{position:absolute;left:-999px;top:0;background:var(--plum);color:#fff;padding:.6rem 1rem;z-index:100}
+.skip{position:absolute;left:-999px;top:0;background:var(--sun);color:var(--navy);padding:.6rem 1rem;z-index:100;font-weight:700}
 .skip:focus{left:1rem;top:1rem}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+section{padding:clamp(4rem,9vw,8rem) 0}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--display);font-weight:800;font-size:1.05rem;text-decoration:none;border-radius:999px;padding:.85rem 1.6rem;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s;line-height:1.2}
-.btn-sos{background:var(--sos);color:#fff;box-shadow:0 4px 0 var(--sos-dark)}
-.btn-sos:hover{background:var(--sos-dark);color:#fff}
-.btn-sos:active{transform:translateY(2px);box-shadow:0 2px 0 var(--sos-dark)}
-.btn-line{border-color:var(--plum);color:var(--plum);background:transparent}
-.btn-line:hover{background:var(--plum);color:#fff}
-.btn-small{font-size:.95rem;padding:.6rem 1.15rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;font-size:1.1rem;text-decoration:none;border-radius:999px;padding:1rem 1.8rem;border:3px solid transparent;cursor:pointer;line-height:1.1;transition:background .15s,color .15s,transform .1s}
+.btn-sos{background:var(--sos);color:#fff;box-shadow:0 5px 0 var(--sos-dark)}
+.btn-sos:hover{background:#C91D22;color:#fff}
+.btn-sos:active{transform:translateY(3px);box-shadow:0 2px 0 var(--sos-dark)}
+.btn-ghost{border-color:currentColor;color:#fff;background:transparent}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2);color:#fff}
+.btn-small{font-size:.98rem;padding:.65rem 1.2rem}
 
 /* Header */
-.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px}
-.brand img{height:48px;width:auto}
-.nav{display:flex;align-items:center;gap:1.6rem}
-.nav a{font-family:var(--display);font-weight:700;font-size:1rem;color:var(--plum);text-decoration:none}
-.nav a:hover{color:var(--heather)}
-.nav .btn{color:#fff}
-.menu-btn{display:none;background:none;border:2px solid var(--plum);border-radius:var(--r-s);padding:.45rem .8rem;font:700 1rem var(--display);color:var(--plum);cursor:pointer}
-@media (max-width:980px){
+.top{position:sticky;top:0;z-index:60;background:#fff;border-bottom:4px solid var(--navy)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:74px}
+.brand img{height:46px;width:auto}
+.nav{display:flex;align-items:center;gap:1.7rem}
+.nav a{font-family:var(--display);font-weight:800;font-size:1.02rem;color:var(--navy);text-decoration:none}
+.nav a:not(.btn):hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--sun)}
+.menu-btn{display:none;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:.6rem 1.2rem;font:900 1rem var(--display);cursor:pointer}
+@media (max-width:1000px){
   .menu-btn{display:block}
-  .nav{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.25rem;border-bottom:1px solid var(--line);display:none}
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.5rem;display:none}
   .nav.open{display:flex}
-  .nav a{padding:.85rem 0;border-bottom:1px solid var(--line);font-size:1.1rem}
-  .nav .btn{margin-top:1rem;border-bottom:0}
+  .nav a{color:#fff;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:1.3rem}
+  .nav .btn{margin-top:1.25rem;border-bottom:0;color:#fff}
 }
 
-/* Hero */
-.hero{overflow:hidden;padding:clamp(3rem,7vw,6rem) 0 clamp(3rem,6vw,5rem);background:radial-gradient(ellipse at 78% 45%,#24407A 0%,var(--plum) 55%,var(--navy-deep) 100%);color:#DCE6F5}
-.hero h1{color:#fff}
-.hero .lead{color:#DCE6F5}
-.hero .price strong{color:#fff}
-.hero .price s{color:#9FB2CF}
-.hero .price span{color:var(--sun)}
-.hero .btn-line{border-color:#fff;color:#fff}
-.hero .btn-line:hover{background:#fff;color:var(--plum)}
-.hero .aperture{box-shadow:0 30px 80px rgba(0,0,0,.35)}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
-.hero .lead{font-size:1.3rem}
-.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;margin:1.5rem 0 1.75rem}
-.price strong{font-family:var(--display);font-size:2.4rem;font-weight:900;color:var(--plum);line-height:1}
-.price s{color:var(--soft);font-size:1.15rem}
-.price span{font-weight:700;color:var(--ok)}
+/* HERO: the button is the brand */
+.hero{background:var(--navy);color:#C9D7EE;padding:clamp(3rem,7vw,6rem) 0 0;overflow:hidden;position:relative}
+.hero>.wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{color:#fff;font-size:clamp(3.2rem,8.6vw,7.4rem);line-height:.92;letter-spacing:-.045em;margin-bottom:.35em}
+.hero h1 span{display:block;color:var(--sun)}
+.hero .lead{font-size:clamp(1.15rem,1.6vw,1.35rem);max-width:46ch;color:#C9D7EE}
+.hero-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:.3rem 1rem;margin:1.75rem 0 2rem}
+.hero-price strong{font:900 clamp(2.4rem,4vw,3.2rem)/1 var(--display);color:#fff}
+.hero-price s{color:#8397B8;font-size:1.2rem}
+.hero-price em{font-style:normal;background:var(--sun);color:var(--navy);font-weight:700;padding:.2rem .7rem;border-radius:999px;font-size:1rem}
 .actions{display:flex;flex-wrap:wrap;gap:1rem}
-.aperture{position:relative;width:min(100%,440px);aspect-ratio:1;margin-inline:auto;border-radius:50%;background:var(--ring);padding:14px}
-.aperture-inner{width:100%;height:100%;border-radius:50%;background:#fff;display:grid;place-items:center;padding:12%}
-.aperture-inner img{width:100%}
-.badge-logo{position:absolute;right:-6%;bottom:2%;width:34%;filter:drop-shadow(0 6px 12px rgba(43,26,54,.25))}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{order:-1;max-width:360px;margin-inline:auto}}
 
-/* Facts */
-.facts{background:var(--sun);color:var(--plum)}
-.facts ul{list-style:none;margin:0 auto;padding:1.6rem 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
-.facts li{display:flex;gap:.8rem;align-items:flex-start;font-size:1.02rem;line-height:1.4}
-.facts b{display:block;font-family:var(--display);font-size:1.15rem;margin-bottom:.15rem}
-.facts svg{flex:none;width:30px;height:30px;stroke:var(--plum);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-@media (max-width:900px){.facts ul{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.facts ul{grid-template-columns:1fr}}
+.press{position:relative;display:grid;place-items:center;padding:1rem 0 4rem}
+.plate{width:min(78vw,420px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#DCE4EF 70%,#B7C4D6);display:grid;place-items:center;box-shadow:0 40px 90px rgba(0,0,0,.45),inset 0 -8px 20px rgba(0,0,0,.12);position:relative}
+.plate::before,.plate::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle,#9AA8BB 30%,#C9D2DE 32%);top:50%;transform:translateY(-50%)}
+.plate::before{left:7%}.plate::after{right:7%}
+.sos-btn{width:66%;aspect-ratio:1;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle at 38% 32%,#FF5A5E,var(--sos) 55%,#B8161B);box-shadow:0 14px 0 var(--sos-dark),0 22px 30px rgba(0,0,0,.35),inset 0 4px 10px rgba(255,255,255,.35);color:#fff;font:900 clamp(3rem,7vw,5rem)/1 var(--display);letter-spacing:.02em;transition:transform .12s,box-shadow .12s;position:relative;z-index:2}
+.sos-btn small{display:block;font:800 .95rem var(--display);letter-spacing:0;opacity:.9;margin-top:.4rem}
+.sos-btn:hover{filter:brightness(1.05)}
+.sos-btn:active,.sos-btn.pressed{transform:translateY(12px);box-shadow:0 2px 0 var(--sos-dark),0 6px 12px rgba(0,0,0,.35),inset 0 4px 10px rgba(255,255,255,.25)}
+.ripple{position:absolute;inset:0;margin:auto;width:66%;aspect-ratio:1;border-radius:50%;border:4px solid var(--sun);opacity:0;pointer-events:none}
+.ripple.go{animation:rip 1.6s ease-out}
+@keyframes rip{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+.alert{position:absolute;right:0;bottom:1.5rem;width:min(300px,80%);background:#fff;color:var(--ink);border-radius:20px;padding:1rem 1.1rem;box-shadow:0 20px 50px rgba(0,0,0,.4);display:flex;gap:.8rem;align-items:flex-start;opacity:0;transform:translateY(20px);transition:opacity .35s,transform .35s;z-index:3}
+.alert.show{opacity:1;transform:none}
+.alert img{width:40px;height:40px;border-radius:10px;flex:none;object-fit:cover}
+.alert b{font-family:var(--display);color:var(--navy);display:block;font-size:1rem}
+.alert p{margin:0;font-size:.95rem;line-height:1.35}
+.alert .live{color:var(--sos);font-weight:700}
+.hint{position:absolute;left:4%;top:2.5rem;font:800 1rem var(--display);color:var(--sun);display:flex;align-items:center;gap:.5rem}
+.hint svg{width:48px;height:36px;stroke:var(--sun);fill:none;stroke-width:2.5;stroke-linecap:round}
+.hero-foot{margin-top:clamp(2rem,4vw,3rem);background:var(--sun);color:var(--navy)}
+.hero-foot ul{list-style:none;margin:0 auto;padding:1.6rem 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.hero-foot li{font-size:1rem;line-height:1.3;border-left:4px solid var(--navy);padding-left:1rem}
+.hero-foot b{display:block;font:900 clamp(1.6rem,2.6vw,2.2rem)/1.05 var(--display);letter-spacing:-.02em;margin-bottom:.2rem}
+@media (max-width:900px){
+  .hero>.wrap{grid-template-columns:1fr}
+  .hero-foot ul{grid-template-columns:1fr 1fr}
+  .hint{display:none}
+  .alert{right:50%;transform:translate(50%,20px);bottom:0}
+  .alert.show{transform:translate(50%,0)}
+}
+@media (max-width:480px){.hero-foot ul{grid-template-columns:1fr}}
 
-/* Sections */
-section{padding:clamp(3.5rem,7vw,6rem) 0}
-.tint{background:var(--mist)}
-.intro{max-width:64ch}
-.intro p{font-size:1.2rem}
-
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
-.split img.photo{border-radius:var(--r-m);width:100%;aspect-ratio:4/3;object-fit:cover}
-@media (max-width:860px){.split{grid-template-columns:1fr}}
+/* Intro: full-bleed photo with overlapping panel */
+.intro{padding:0;position:relative;background:var(--sky)}
+.intro-photo{width:100%;height:clamp(420px,62vw,720px);object-fit:cover;object-position:40% 30%}
+.intro-panel{position:relative;margin-top:-12rem;background:#fff;border-radius:28px;padding:clamp(2rem,5vw,4rem);max-width:760px;margin-left:auto;margin-right:max(1.25rem,calc((100% - var(--wrap))/2));box-shadow:0 30px 60px rgba(14,31,63,.18)}
+.intro-panel h2{font-size:clamp(2.2rem,5vw,3.8rem)}
+.intro-panel p{font-size:1.2rem}
+.intro-pad{height:clamp(4rem,8vw,7rem)}
+@media (max-width:760px){.intro-panel{margin:-6rem 1rem 0;border-radius:22px}}
 
 /* Body Guard */
-.bg-head{display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem}
-.bg-head img{width:110px;flex:none}
-.bg-head h2{margin:0}
-.note{display:flex;gap:.8rem;align-items:flex-start;background:#FFF6E0;border-left:5px solid #F39200;border-radius:var(--r-s);padding:1rem 1.2rem;margin:1.5rem 0;max-width:62ch}
-.note svg{flex:none;width:26px;height:26px;stroke:#B36A00;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
-.note p{margin:0}
+.bg{background:var(--sky)}
+.bg-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.bg-logo{width:100%;max-width:400px;margin-inline:auto;transform:rotate(-6deg);filter:drop-shadow(0 25px 40px rgba(14,31,63,.3))}
+.bg p{font-size:1.2rem}
+.wifi{display:inline-flex;gap:.75rem;align-items:center;background:var(--navy);color:#fff;border-radius:999px;padding:.7rem 1.3rem .7rem .8rem;font-size:1rem;margin-top:.5rem}
+.wifi span{background:var(--sun);color:var(--navy);font:900 .95rem var(--display);border-radius:999px;padding:.25rem .7rem}
+@media (max-width:860px){.bg-grid{grid-template-columns:1fr}.bg-logo{max-width:260px}}
 
-.steps{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s}
-.steps li{counter-increment:s;position:relative;padding-top:4.2rem}
-.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:3.1rem;height:3.1rem;border-radius:50%;background:var(--sos);color:#fff;font:900 1.5rem/3.1rem var(--display);text-align:center;box-shadow:0 4px 0 var(--sos-dark)}
-.steps h3{margin-bottom:.35rem}
-.steps p{margin:0;font-size:1.05rem}
-@media (max-width:820px){.steps{grid-template-columns:1fr;gap:1.75rem}}
-
-.kit{margin-top:4rem;display:grid;grid-template-columns:.9fr 1.1fr;gap:0;background:#fff;border:2px solid var(--plum);border-radius:var(--r-m);overflow:hidden}
-.kit-img{background:var(--mist);display:grid;place-items:center;padding:2rem}
-.kit-body{padding:clamp(1.5rem,4vw,2.75rem)}
-.kit-body ul{padding-left:1.2rem;margin:0 0 1.25rem}
-.kit-body li{margin-bottom:.3rem}
-.offer{border-radius:var(--r-s);margin:0 0 1.25rem;max-width:340px}
-@media (max-width:820px){.kit{grid-template-columns:1fr}}
-
-/* Video */
-.videos{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+/* How it works */
+.how{background:var(--navy-deep);color:#C9D7EE}
+.how h2{color:#fff}
+.steps{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;border-top:2px solid rgba(255,255,255,.15)}
+.steps li{counter-increment:s;padding:2rem 2rem 0 0}
+.steps li+li{padding-left:2rem;border-left:2px solid rgba(255,255,255,.15)}
+.steps li::before{content:counter(s);display:block;font:900 clamp(5rem,11vw,9rem)/.85 var(--display);color:transparent;-webkit-text-stroke:3px var(--sun);margin-bottom:1rem}
+.steps h3{color:#fff;font-size:1.7rem}
+.steps p{margin:0}
+@media (max-width:860px){.steps{grid-template-columns:1fr}.steps li,.steps li+li{padding:2rem 0;border-left:0;border-bottom:2px solid rgba(255,255,255,.15)}}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:clamp(3rem,6vw,5rem)}
 .video{margin:0}
-.video .frame{position:relative;aspect-ratio:16/9;border-radius:var(--r-m);overflow:hidden;background:var(--plum)}
+.video .frame{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:var(--navy-2)}
 .video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0}
-.video .placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;padding:1rem;background:radial-gradient(circle at 50% 45%,#2A4B85,var(--plum))}
-.video .placeholder svg{width:64px;height:64px;margin:0 auto .6rem;fill:#fff;opacity:.9}
-.video figcaption{font-family:var(--display);font-weight:800;color:var(--plum);margin-top:.7rem;font-size:1.1rem}
+.video .placeholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;background:radial-gradient(circle at 50% 45%,#2A4B85,var(--navy-2))}
+.video .placeholder svg{display:block;width:72px;height:72px;margin:0 auto .5rem;fill:var(--sun)}
+.video figcaption{font:900 1.2rem var(--display);color:#fff;margin-top:.8rem}
 @media (max-width:760px){.videos{grid-template-columns:1fr}}
 
-/* Products */
-.section-head{max-width:62ch;margin-bottom:2.5rem}
-.feature-product{display:grid;grid-template-columns:280px 1fr;gap:2.5rem;align-items:center;background:#fff;border-radius:var(--r-m);padding:clamp(1.5rem,3vw,2.5rem);margin-bottom:1.75rem}
-.feature-product img{width:100%;max-width:280px;margin-inline:auto}
-.places{list-style:none;padding:0;margin:0 0 1.25rem;display:grid;gap:.9rem}
-.places li{padding-left:1.1rem;border-left:4px solid var(--sos)}
-.places b{color:var(--plum)}
-@media (max-width:760px){.feature-product{grid-template-columns:1fr}}
+/* Kit */
+.kit-sec{background:var(--sun)}
+.kit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.aperture{width:min(100%,500px);aspect-ratio:1;margin-inline:auto;border-radius:50%;background:var(--ring);padding:16px;box-shadow:0 30px 70px rgba(14,31,63,.3)}
+.aperture div{width:100%;height:100%;border-radius:50%;background:#fff;display:grid;place-items:center;padding:13%}
+.kit h2{font-size:clamp(2.6rem,6vw,5rem)}
+.kit ul{list-style:none;padding:0;margin:0 0 1.75rem}
+.kit li{padding:.7rem 0;border-bottom:2px solid rgba(14,31,63,.15);font-weight:700}
+.kit-price{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:1.75rem}
+.kit-price strong{font:900 clamp(3rem,6vw,4.5rem)/1 var(--display);color:var(--navy);letter-spacing:-.03em}
+.kit-price s{font-size:1.3rem;color:#6B5A1E}
+.offer{border-radius:18px;max-width:320px;margin-top:1.75rem;box-shadow:0 12px 30px rgba(14,31,63,.18)}
+@media (max-width:860px){.kit{grid-template-columns:1fr}}
 
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem}
-.product{background:#fff;border-radius:var(--r-m);padding:1.5rem;display:flex;flex-direction:column}
-.product .pic{aspect-ratio:1;display:grid;place-items:center;margin-bottom:1rem}
-.product .pic img{max-height:100%;width:auto;object-fit:contain}
-.product h3{font-size:1.25rem;margin-bottom:.3rem}
-.product p{font-size:1rem;margin-bottom:1rem}
-.product .row{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
-.product .cost{font-family:var(--display);font-weight:900;font-size:1.5rem;color:var(--plum)}
-.product .pair{margin-top:auto;display:grid;gap:.6rem}
-.product .pair div{display:flex;align-items:center;justify-content:space-between;gap:.75rem;border-top:1px solid var(--line);padding-top:.6rem}
-.product .pair span{font-weight:700}
-.soon{position:relative}
-.tag{align-self:flex-start;display:inline-block;background:var(--sun);color:var(--plum);font:800 .85rem var(--display);padding:.2rem .65rem;border-radius:999px;margin-bottom:.5rem}
-@media (max-width:960px){.products{grid-template-columns:1fr 1fr}}
-@media (max-width:600px){.products{grid-template-columns:1fr}}
+/* Accessories bento */
+.acc-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.acc-head p{margin:0;font-size:1.15rem;max-width:44ch}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.tile{border-radius:26px;padding:1.75rem;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.tile h3{margin-bottom:.4rem}
+.tile p{font-size:1rem}
+.tile .pic{flex:1;display:grid;place-items:center;min-height:200px;margin-bottom:1.25rem}
+.tile .pic img{max-height:240px;width:auto}
+.tile .buy{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
+.cost{font:900 1.9rem/1 var(--display);letter-spacing:-.02em;color:inherit}
+.t-white{background:#fff;border:3px solid var(--navy)}
+.t-sky{background:var(--sky)}
+.t-sun{background:var(--sun-2)}
+.t-navy{background:var(--navy);color:#C9D7EE}
+.t-navy h3{color:#fff}
+.t-navy .cost{color:#fff}
+.t-big{grid-column:span 2;grid-row:span 2;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-content:center}
+.t-big .pic{margin:0}
+.t-big{align-items:center}
+.t-big .pic img{width:300px;max-width:100%;max-height:none}
+.t-big h3{font-size:2.2rem}
+.t-wide{grid-column:1/-1;display:grid;grid-template-columns:260px 1fr;padding:1.5rem 2rem;gap:1.25rem;align-items:center}
+.t-wide .pic{margin:0;min-height:0}
+.t-wide .pic img{border-radius:16px;max-height:240px}
+.t-wide h3{font-size:2rem}
+.places{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.75rem;font-size:1rem}
+.places li{padding-left:1rem;border-left:4px solid var(--sos)}
+.places b{color:var(--navy)}
+.pair{margin-top:auto;display:grid;gap:.6rem}
+.pair div{display:flex;align-items:center;justify-content:space-between;gap:.5rem;border-top:2px solid rgba(14,31,63,.15);padding-top:.6rem}
+.pair span{font:900 1.05rem var(--display);white-space:nowrap}
+.tag{align-self:flex-start;background:var(--sun);color:var(--navy);font:900 .9rem var(--display);padding:.3rem .8rem;border-radius:999px;margin-bottom:.75rem;display:inline-block}
+@media (max-width:1060px){.bento{grid-template-columns:1fr 1fr}.t-big{grid-row:auto}}
+@media (max-width:640px){.bento{grid-template-columns:1fr}.t-big,.t-wide{grid-column:auto;grid-template-columns:1fr}}
 
 /* Watches */
-.watches{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.watch{border:2px solid var(--line);border-radius:var(--r-m);padding:clamp(1.5rem,3vw,2.25rem);display:flex;flex-direction:column}
-.watch .pic{height:240px;display:grid;place-items:center;margin-bottom:1.25rem}
-.watch .pic img{max-height:240px;width:auto;border-radius:var(--r-s)}
-.watch .price{margin:.25rem 0 1.25rem}
-.watch .price strong{font-size:2rem}
-.feat{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:.55rem 1.25rem;font-size:1rem}
-.feat li{padding-left:1.5rem;position:relative}
-.feat li::before{content:"";position:absolute;left:0;top:.45em;width:.7rem;height:.7rem;border-radius:50%;background:var(--ok)}
-.watch .btn{margin-top:auto;align-self:flex-start}
+.watch-sec{background:var(--navy);color:#C9D7EE}
+.watch-sec h2{color:#fff}
+.watch-sec .intro-line{font-size:1.2rem;max-width:56ch;margin-bottom:3rem}
+.watches{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.watch{background:var(--navy-2);border-radius:28px;padding:clamp(1.5rem,3vw,2.5rem);display:flex;flex-direction:column}
+.watch .pic{background:#fff;border-radius:20px;height:280px;display:grid;place-items:center;margin-bottom:1.5rem;padding:1rem}
+.watch .pic img{max-height:250px;width:auto;border-radius:10px}
+.watch h3{color:#fff;font-size:1.9rem}
+.w-price{display:flex;align-items:baseline;gap:.8rem;margin-bottom:1rem}
+.w-price strong{font:900 2.6rem/1 var(--display);color:var(--sun);letter-spacing:-.02em}
+.w-price s{color:#8397B8}
+.watch p{font-size:1rem}
+.feat{list-style:none;padding:0;margin:0 0 1.5rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.feat li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
 .watch details{margin-bottom:1.5rem;font-size:1rem}
-.watch summary{cursor:pointer;font-weight:700;color:var(--heather)}
+.watch summary{cursor:pointer;font-weight:700;color:var(--sun)}
+.watch details p{margin-top:.6rem}
+.watch .btn{margin-top:auto;align-self:flex-start}
 @media (max-width:860px){.watches{grid-template-columns:1fr}}
-@media (max-width:460px){.feat{grid-template-columns:1fr}}
 
 /* Stories */
-.dark{background:var(--plum);color:#DCE6F5}
-.dark h2,.dark blockquote footer{color:#fff}
-.dark blockquote footer{color:var(--sun)}
-.stories{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
-.stories .photo{border-radius:var(--r-m);width:100%;aspect-ratio:3/4;object-fit:cover;position:sticky;top:110px}
-blockquote{margin:0 0 2.5rem;padding:0}
-blockquote p{font-size:1.15rem}
-blockquote p:first-child::before{content:"\201C";font:900 4rem/0 var(--display);color:var(--sun);vertical-align:-1.4rem;margin-right:.3rem}
-blockquote footer{font-family:var(--display);font-weight:800;color:var(--plum)}
-@media (max-width:860px){.stories{grid-template-columns:1fr}.stories .photo{position:static;aspect-ratio:4/3}}
+.stories{background:#fff}
+.pull{font:900 clamp(1.9rem,4.2vw,3.4rem)/1.12 var(--display);color:var(--navy);letter-spacing:-.025em;max-width:24ch;margin:0 0 1.25rem;position:relative}
+.pull::before{content:"\201C";position:absolute;left:-.1em;top:-.55em;font-size:3.5em;color:var(--sun);z-index:-1;line-height:1}
+.who{font:900 1.2rem var(--display);color:var(--sos);margin-bottom:clamp(3rem,6vw,5rem)}
+.story-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.story-grid img{border-radius:28px;width:100%;aspect-ratio:3/4;object-fit:cover}
+.story-grid h3{font-size:1.9rem}
+.story-grid .who{margin-bottom:0}
+@media (max-width:860px){.story-grid{grid-template-columns:1fr}.story-grid img{aspect-ratio:4/3}}
 
 /* Guides */
-.guides{list-style:none;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.guides a{display:flex;align-items:center;gap:1rem;padding:1.25rem 1.4rem;border:2px solid var(--line);border-radius:var(--r-m);text-decoration:none;color:var(--plum);font-family:var(--display);font-weight:800;background:#fff}
-.guides a:hover{border-color:var(--heather)}
-.guides svg{flex:none;width:34px;height:34px;stroke:var(--heather);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.guides small{display:block;font-family:var(--body);font-weight:400;color:var(--soft);font-size:.9rem}
-@media (max-width:860px){.guides{grid-template-columns:1fr}}
+.guides-sec{background:var(--sky)}
+.guides{list-style:none;padding:0;margin:2.5rem 0 0;border-top:3px solid var(--navy)}
+.guides a{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 0;border-bottom:3px solid var(--navy);text-decoration:none;color:var(--navy);font:900 clamp(1.3rem,2.6vw,2rem) var(--display);letter-spacing:-.015em}
+.guides a:hover{color:var(--blue)}
+.guides small{font:700 1rem var(--body);color:var(--soft);letter-spacing:0}
 
 /* FAQ */
-.faq{max-width:820px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;padding:1.25rem 3rem 1.25rem 0;font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--plum);position:relative}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.faq-grid>div:first-child{position:sticky;top:110px}
+.faq details{border-bottom:3px solid var(--sky)}
+.faq summary{list-style:none;cursor:pointer;padding:1.4rem 3.2rem 1.4rem 0;font:900 1.3rem var(--display);color:var(--navy);position:relative}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:.5rem;top:50%;transform:translateY(-50%);font-size:1.8rem;color:var(--heather);transition:transform .2s}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq details p{padding-bottom:.4rem}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:2.2rem;height:2.2rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1.5rem;line-height:1;transition:transform .2s,background .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg);background:var(--sos)}
+.faq details p{padding-bottom:.5rem}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}.faq-grid>div:first-child{position:static}}
 
 /* Contact */
-.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem)}
+.contact-sec{background:var(--sun)}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.contact p{font-size:1.2rem}
+.form-card{background:#fff;border-radius:28px;padding:clamp(1.5rem,4vw,2.75rem);box-shadow:0 30px 60px rgba(14,31,63,.18)}
 form{display:grid;gap:1.1rem}
 .field{display:grid;gap:.35rem}
-label{font-weight:700;color:var(--plum)}
-input,select,textarea{font:inherit;font-size:1.05rem;color:var(--ink);padding:.8rem 1rem;border:2px solid #C3D3E3;border-radius:var(--r-s);background:#fff;width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--heather);box-shadow:0 0 0 3px rgba(31,111,178,.2)}
+label{font-weight:700;color:var(--navy)}
+input,select,textarea{font:inherit;font-size:1.05rem;color:var(--ink);padding:.85rem 1rem;border:3px solid var(--sky-2);border-radius:14px;background:#fff;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--navy)}
 textarea{min-height:150px;resize:vertical}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 .hp{position:absolute;left:-5000px}
@@ -265,20 +299,22 @@ textarea{min-height:150px;resize:vertical}
 @media (max-width:860px){.contact{grid-template-columns:1fr}}
 @media (max-width:520px){.two{grid-template-columns:1fr}}
 
-/* Disclaimer + footer */
-.disclaimer{background:var(--mist);padding:2.25rem 0}
-.disclaimer p{font-size:.98rem;margin:0;max-width:80ch}
-.disclaimer b{color:var(--plum)}
-.foot{background:var(--navy-deep);color:#DCE6F5;padding:3rem 0 2rem}
+/* Footer */
+.disclaimer{background:var(--navy-deep);color:#8397B8;padding:2rem 0 0}
+.disclaimer p{font-size:.95rem;max-width:90ch;margin:0;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.12)}
+.disclaimer b{color:#fff}
+.foot{background:var(--navy-deep);color:#C9D7EE;padding:3rem 0 2rem}
 .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:2rem}
-.foot .logo-chip{background:#fff;border-radius:var(--r-s);padding:.6rem .9rem;display:inline-block}
-.foot .logo-chip img{height:44px;width:auto}
-.foot nav{display:flex;flex-wrap:wrap;gap:1.25rem}
+.logo-chip{background:#fff;border-radius:14px;padding:.6rem .9rem;display:inline-block}
+.logo-chip img{height:44px;width:auto}
+.foot nav{display:flex;flex-wrap:wrap;gap:1.4rem}
 .foot nav a{color:#fff;text-decoration:none;font-weight:700}
-.foot nav a:hover{text-decoration:underline}
-.bono{display:flex;align-items:center;gap:.8rem;font-size:.95rem}
+.foot nav a:hover{color:var(--sun)}
+.bono{display:flex;align-items:center;gap:.8rem;font-size:.95rem;color:#C9D7EE;text-decoration:none}
 .bono img{height:34px;width:auto;border-radius:4px}
-.legal{width:100%;border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem;font-size:.9rem;color:#9FB2CF}
+.legal{width:100%;font-size:.9rem;color:#8397B8;margin:0}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -286,7 +322,7 @@ textarea{min-height:150px;resize:vertical}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Camera Care home"><img src="images/homecamera-care-logo.webp" alt="Camera Care" width="146" height="48"></a>
+    <a class="brand" href="#top" aria-label="Camera Care home"><img src="images/homecamera-care-logo.webp" alt="Camera Care" width="140" height="46"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#bodyguard">Body Guard</a>
@@ -305,72 +341,73 @@ textarea{min-height:150px;resize:vertical}
   <div class="hero" id="top">
     <div class="wrap">
       <div>
-        <h1>Worried about a loved one living alone?</h1>
-        <p class="lead">Body Guard puts an SOS button within reach in every room. One press alerts your phone, dials the family, and lets you see and speak to them through the camera, so they can stay independent in the home they love.</p>
-        <div class="price">
+        <h1>One press.<span>The family knows.</span></h1>
+        <p class="lead">Worried about a loved one living alone? Body Guard puts an SOS button within reach in every room. One press alerts your phone, dials the family, and lets you see and speak to them through the camera.</p>
+        <div class="hero-price">
           <strong>£129.99</strong>
           <s>£169.99</s>
-          <span>One-off payment. No monthly fees.</span>
+          <em>One-off. No monthly fees.</em>
         </div>
         <div class="actions">
           <a class="btn btn-sos" href="#contact" data-product="Body Guard Kit">Order the Body Guard kit</a>
-          <a class="btn btn-line" href="#how">See how it works</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
       </div>
-      <div class="hero-art">
-        <div class="aperture">
-          <div class="aperture-inner"><img src="images/bodyguard-kit.webp" alt="Body Guard kit: camera unit with screen, SOS buttons, pendant, SD card and cables" width="414" height="390"></div>
-          <img class="badge-logo" src="images/bodyguard-logo.webp" alt="" width="420" height="420">
+      <div class="press">
+        <span class="hint" aria-hidden="true">Try it<svg viewBox="0 0 48 36"><path d="M4 6c14 0 28 6 36 22"/><path d="M32 24l8 5 2-9"/></svg></span>
+        <div class="plate">
+          <span class="ripple" aria-hidden="true"></span>
+          <button class="sos-btn" type="button" aria-describedby="alert-demo">SOS<small>Press me</small></button>
+        </div>
+        <div class="alert" id="alert-demo" role="status" aria-live="polite">
+          <img src="images/home-camera-care-logo-02.webp" alt="">
+          <div><b>Body Guard: SOS pressed</b><p>Bedroom button. Calling you now.<br><span class="live">Camera is live</span></p></div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="facts">
-    <ul class="wrap">
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.5L16 9.5"/></svg><div><b>No monthly fees</b>Pay once, own it outright.</div></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></svg><div><b>Instant mobile alerts</b>Know straight away when help is needed.</div></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg><div><b>200m range</b>Covers the whole house and garden.</div></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div><b>Two-way talk</b>Speak to them through the unit.</div></li>
-    </ul>
+    <div class="hero-foot">
+      <ul class="wrap">
+        <li><b>£0 a month</b>Pay once, own it outright</li>
+        <li><b>Instant alerts</b>Straight to your phone</li>
+        <li><b>200m range</b>Whole house and garden</li>
+        <li><b>Two-way talk</b>Speak through the unit</li>
+      </ul>
+    </div>
   </div>
 
   <!-- INTRO -->
-  <section>
-    <div class="wrap split">
-      <div class="intro">
-        <h2>Independence at home, with help seconds away</h2>
-        <p>At Camera Care, our mission is simple: helping your loved ones stay independent for longer in their own homes, and giving the family who care about them peace of mind.</p>
-        <p>Whether it's a fall, an emergency or a security worry, Body Guard means help is always one button press away. Stop worrying about "what if" and start enjoying peace of mind.</p>
-      </div>
-      <img class="photo" src="images/bodyguard-elderly.webp" alt="Smiling older man opening the gate at his home" width="1400" height="933" loading="lazy">
+  <section class="intro" aria-labelledby="intro-h">
+    <img class="intro-photo" src="images/bodyguard-elderly.webp" alt="Smiling older man opening the gate at his home" width="1400" height="933">
+    <div class="intro-panel">
+      <h2 id="intro-h">Their home. Their independence. Your peace of mind.</h2>
+      <p>Our mission is simple: helping your loved ones stay independent for longer in the place they call home. Whether it's a fall, an emergency or a security worry, help is always one button press away.</p>
+      <p style="margin:0">Stop worrying about "what if" and start enjoying peace of mind.</p>
     </div>
+    <div class="intro-pad"></div>
   </section>
 
   <!-- BODY GUARD -->
-  <section class="tint" id="bodyguard">
-    <div class="wrap">
-      <div class="bg-head">
-        <img src="images/bodyguard-logo.webp" alt="Body Guard logo" width="110" height="110" loading="lazy">
-        <h2>Body Guard: the complete home safety system</h2>
+  <section class="bg" id="bodyguard" style="padding-top:0">
+    <div class="wrap bg-grid">
+      <img class="bg-logo" src="images/bodyguard-logo.webp" alt="Body Guard logo" width="420" height="420" loading="lazy">
+      <div>
+        <h2>Meet Body Guard</h2>
+        <p>A personal safety and security system built for elderly and disabled people living independently. It combines SOS buttons, a wearable pendant and a bedside button with a security camera, so every alert comes with instant visual confirmation of what's happening.</p>
+        <p>Add more cameras and SOS buttons whenever you need them, and build a safety net that fits the home.</p>
+        <div class="wifi"><span>2.4GHz</span>Body Guard connects to 2.4GHz Wi-Fi, which most home routers broadcast.</div>
       </div>
-      <div class="intro">
-        <p>Body Guard is a personal safety and security system built for elderly and disabled people living independently. It combines SOS buttons, a wearable pendant and a bedside button with a security camera, so every alert comes with instant visual confirmation of what's happening.</p>
-        <p>You can add more cameras and SOS buttons whenever you need them, building a safety net that fits the home.</p>
-      </div>
-      <div class="note">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/><path d="M1.5 9a15 15 0 0 1 21 0"/></svg>
-        <p><b>Please note:</b> Body Guard connects to 2.4GHz Wi-Fi. Most home routers broadcast this band; check your router settings if you're unsure.</p>
-      </div>
+    </div>
+  </section>
 
-      <h3 id="how" style="margin-top:3rem;font-size:1.75rem">How it works</h3>
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
       <ol class="steps">
         <li><h3>Press any SOS button</h3><p>The pendant, the wall button or the bedside button. Wherever they are in the house or garden, help is within reach.</p></li>
         <li><h3>Your phone is alerted</h3><p>Body Guard sends an instant alert to the app and automatically dials the contacts you've chosen.</p></li>
-        <li><h3>See and speak to them</h3><p>Check the camera to see what's happened and have a two-way conversation through the unit.</p></li>
+        <li><h3>See and speak to them</h3><p>Check the camera to see what's happened, and talk to them through the unit.</p></li>
       </ol>
-
-      <h3 style="margin-top:4rem;font-size:1.75rem">See Body Guard in action</h3>
       <!-- VIDEOS: paste a YouTube/Vimeo embed URL into data-embed (e.g. https://www.youtube-nocookie.com/embed/VIDEO_ID)
            or a local file path into data-file (e.g. videos/setup.mp4). Leave both empty to show the placeholder. -->
       <div class="videos">
@@ -383,118 +420,106 @@ textarea{min-height:150px;resize:vertical}
           <figcaption>Using the SOS buttons and pendant</figcaption>
         </figure>
       </div>
+    </div>
+  </section>
 
-      <div class="kit">
-        <div class="kit-img"><img src="images/bodyguard-kit.webp" alt="Everything in the Body Guard kit" width="414" height="390" loading="lazy"></div>
-        <div class="kit-body">
-          <img class="offer" src="images/bodyguard-special-offer.webp" alt="Special introductory offer £129.99" width="900" height="491" loading="lazy">
-          <h3 style="font-size:1.75rem">Body Guard kit</h3>
-          <ul>
-            <li>Body Guard camera unit with screen and two-way audio</li>
-            <li>Bedside SOS button, SOS button and SOS pendant</li>
-            <li>128GB SD card for recording, plus power and USB cables</li>
-          </ul>
-          <div class="price" style="margin:1rem 0 1.5rem">
-            <strong>£129.99</strong><s>£169.99</s><span>No monthly fees</span>
-          </div>
-          <a class="btn btn-sos" href="#contact" data-product="Body Guard Kit">Order the Body Guard kit</a>
-        </div>
+  <!-- KIT -->
+  <section class="kit-sec" aria-labelledby="kit-h">
+    <div class="wrap kit">
+      <div class="aperture"><div><img src="images/bodyguard-kit.webp" alt="Everything in the Body Guard kit: camera unit, SOS buttons, pendant, SD card and cables" width="414" height="390" loading="lazy"></div></div>
+      <div>
+        <h2 id="kit-h">The Body Guard kit</h2>
+        <ul>
+          <li>Body Guard camera unit with screen and two-way audio</li>
+          <li>Bedside SOS button, SOS button and SOS pendant</li>
+          <li>128GB SD card, plus power and USB cables</li>
+        </ul>
+        <div class="kit-price"><strong>£129.99</strong><s>£169.99</s></div>
+        <a class="btn btn-dark" href="#contact" data-product="Body Guard Kit">Order the Body Guard kit</a>
+        <img class="offer" src="images/bodyguard-special-offer.webp" alt="Special introductory offer £129.99" width="900" height="491" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- ACCESSORIES + STORE -->
-  <section class="tint" id="accessories" style="padding-top:0">
+  <!-- ACCESSORIES -->
+  <section id="accessories">
     <div class="wrap">
-      <div class="section-head">
-        <h2>Grow your Body Guard system</h2>
+      <div class="acc-head">
+        <h2 style="margin:0">Grow the system</h2>
         <p>Add buttons, pendants and cameras so there are no gaps where an incident could go unnoticed. Every accessory pairs with your Body Guard unit.</p>
       </div>
-
-      <div class="feature-product">
-        <img src="images/accessories-sos-button.webp" alt="Camera Care bedside SOS button mounted on a white wall plate" width="532" height="512" loading="lazy">
-        <div>
-          <h3 style="font-size:1.6rem">Bedside SOS button</h3>
-          <p>It's called a bedside button, but it's even more useful in other high-risk spots:</p>
-          <ul class="places">
-            <li><b>The nightstand.</b> Within arm's reach of the bed, ideally low enough to press even after a fall to the floor.</li>
-            <li><b>The bathroom.</b> The most common place for slips and falls. Mount it near the base of the wall or beside the toilet.</li>
-            <li><b>Near the front door.</b> For a security threat, or when someone feels unsafe opening the door.</li>
-          </ul>
-          <div class="row" style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap">
-            <span class="cost" style="font:900 1.6rem var(--display);color:var(--plum)">£12.99</span>
-            <a class="btn btn-sos btn-small" href="#contact" data-product="Bedside SOS Button">Order</a>
+      <div class="bento">
+        <article class="tile t-white t-big">
+          <div class="pic"><img src="images/accessories-sos-button.webp" alt="Camera Care bedside SOS button on a white wall plate" width="326" height="326" loading="lazy"></div>
+          <div>
+            <h3>Bedside SOS button</h3>
+            <p>Called a bedside button, but even more useful in other high-risk spots:</p>
+            <ul class="places">
+              <li><b>The nightstand.</b> Low enough to press even after a fall to the floor.</li>
+              <li><b>The bathroom.</b> Where most slips happen. Mount it near the floor or beside the toilet.</li>
+              <li><b>The front door.</b> For a security threat, or when opening the door feels unsafe.</li>
+            </ul>
+            <div class="buy"><span class="cost">£12.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="Bedside SOS Button">Order</a></div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="products">
-        <article class="product">
+        <article class="tile t-sky">
           <div class="pic"><img src="images/accessories-camera.webp" alt="Additional Body Guard camera" width="532" height="646" loading="lazy"></div>
           <h3>Extra camera</h3>
-          <p>One camera is a window into the home. Adding more turns monitoring into a joined-up safety net across every room.</p>
-          <div class="row"><span class="cost">£36.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="Extra Camera (Slave Camera)">Order</a></div>
+          <p>Turn one window into the home into a joined-up safety net across every room.</p>
+          <div class="buy"><span class="cost">£36.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="Extra Camera (Slave Camera)">Order</a></div>
         </article>
 
-        <article class="product">
+        <article class="tile t-sun">
           <div class="pic"><img src="images/accessories-sos-pendant-and-button.webp" alt="SOS pendant on a blue lanyard and a matching SOS button" width="532" height="635" loading="lazy"></div>
-          <h3>SOS pendant and SOS button</h3>
-          <p>Same life-saving alert, two ways to carry it. Wear the pendant around the neck, or keep the button in a pocket or by a favourite chair.</p>
+          <h3>SOS pendant and button</h3>
+          <p>Same alert, two ways to carry it: around the neck or by a favourite chair.</p>
           <div class="pair">
-            <div><span>SOS pendant £8.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SOS Pendant">Order</a></div>
-            <div><span>SOS button £7.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SOS Button">Order</a></div>
+            <div><span>Pendant £8.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SOS Pendant">Order</a></div>
+            <div><span>Button £7.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SOS Button">Order</a></div>
           </div>
         </article>
 
-        <article class="product">
+        <article class="tile t-sun">
           <div class="pic"><img src="images/accessories-128gb-sd-card.webp" alt="128GB microSD card with adapter" width="532" height="709" loading="lazy"></div>
           <h3>128GB SD card</h3>
-          <p>High-performance card that expands recording capacity, so you never miss a crucial moment.</p>
-          <div class="row"><span class="cost">£9.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SD Card 128GB">Order</a></div>
+          <p>More recording capacity, so you never miss a crucial moment.</p>
+          <div class="buy"><span class="cost">£9.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="SD Card 128GB">Order</a></div>
         </article>
 
-        <article class="product">
+        <article class="tile t-sky">
           <div class="pic"><img src="images/store-usb-cable.webp" alt="Braided 5 metre USB cable" width="405" height="540" loading="lazy"></div>
           <h3>USB cable, 5m</h3>
-          <p>Extra-long braided cable, so the camera can sit exactly where it gives the best view of the room.</p>
-          <div class="row"><span class="cost">£6.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="USB Cable 5m">Order</a></div>
+          <p>Extra length, so the camera sits exactly where the view is best.</p>
+          <div class="buy"><span class="cost">£6.99</span><a class="btn btn-sos btn-small" href="#contact" data-product="USB Cable 5m">Order</a></div>
         </article>
 
-        <article class="product soon">
+        <article class="tile t-navy t-wide">
           <div class="pic"><img src="images/store-waterproof-sos-button-and-pendant.webp" alt="Waterproof SOS button and teardrop pendant in a bathroom" width="540" height="540" loading="lazy"></div>
-          <span class="tag">Coming soon</span>
-          <h3>Waterproof SOS button and pendant</h3>
-          <p>Made for the bathroom and shower, where falls are most likely.</p>
-          <div class="row"><span class="cost">£16.99</span><a class="btn btn-line btn-small" href="#contact" data-product="Waterproof SOS Button and Pendant (notify me)">Notify me</a></div>
+          <div>
+            <span class="tag">Coming soon</span>
+            <h3>Waterproof SOS button and pendant</h3>
+            <p>Made for the bathroom and shower, where falls are most likely.</p>
+            <div class="buy"><span class="cost">£16.99</span><a class="btn btn-ghost btn-small" href="#contact" data-product="Waterproof SOS Button and Pendant (notify me)">Notify me</a></div>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- WATCHES -->
-  <section id="watches">
+  <section class="watch-sec" id="watches">
     <div class="wrap">
-      <div class="section-head">
-        <h2>Protection outside the home</h2>
-        <p>For loved ones who are still active and out and about, our SOS smart watches work anywhere with 4G coverage. They need a SIM card with a monthly plan from a mobile network provider.</p>
-      </div>
+      <h2>Safe outside the home, too</h2>
+      <p class="intro-line">For loved ones who are still active and out and about, our SOS smart watches work anywhere with 4G coverage. They need a SIM card with a monthly plan from a mobile network provider.</p>
       <div class="watches">
         <article class="watch">
           <div class="pic"><img src="images/smart-health-watch-ev-05-sos-smart-watch.webp" alt="EV-05 SOS smart watch with round AMOLED screen" width="540" height="309" loading="lazy"></div>
-          <h3 style="font-size:1.6rem">EV-05 SOS smart watch</h3>
-          <div class="price"><strong>£120.00</strong><s>£199.00</s></div>
-          <p style="font-size:1rem">A stand-alone personal alarm for people who want a help button without signing up to a monitored alert service. Dials up to 10 emergency contacts. Best for people who are still active, don't yet need higher levels of care, and are comfortable using a mobile phone.</p>
+          <h3>EV-05 SOS smart watch</h3>
+          <div class="w-price"><strong>£120.00</strong><s>£199.00</s></div>
+          <p>A stand-alone personal alarm for people who want a help button without signing up to a monitored alert service. Dials up to 10 emergency contacts. Best for people who are still active, don't yet need higher levels of care, and are comfortable using a mobile phone.</p>
           <ul class="feat">
-            <li>One-button SOS alarm</li>
-            <li>Fall alarm</li>
-            <li>No-motion alarm</li>
-            <li>Heart rate alerts</li>
-            <li>Live GPS tracking</li>
-            <li>Two-way calling</li>
-            <li>Medication reminders</li>
-            <li>Voice prompts</li>
-            <li>Step counter</li>
-            <li>Waterproof IP67</li>
+            <li>SOS button</li><li>Fall alarm</li><li>No-motion alarm</li><li>Heart rate alerts</li><li>Live GPS tracking</li><li>Two-way calling</li><li>Medication reminders</li><li>Voice prompts</li><li>Step counter</li><li>Waterproof IP67</li>
           </ul>
           <details>
             <summary>More details</summary>
@@ -502,23 +527,13 @@ textarea{min-height:150px;resize:vertical}
           </details>
           <a class="btn btn-sos" href="#contact" data-product="EV-05 SOS Smart Watch">Order the EV-05</a>
         </article>
-
         <article class="watch">
           <div class="pic"><img src="images/smart-health-watch-safety-alert-watch-_saw_.webp" alt="White Safety Alert Watch with rectangular screen" width="524" height="540" loading="lazy"></div>
-          <h3 style="font-size:1.6rem">Safety Alert Watch (SAW)</h3>
-          <div class="price"><strong>£79.00</strong><s>£149.00</s></div>
-          <p style="font-size:1rem">More than a safety device: a companion that keeps your loved one connected, with health monitoring built in.</p>
+          <h3>Safety Alert Watch (SAW)</h3>
+          <div class="w-price"><strong>£79.00</strong><s>£149.00</s></div>
+          <p>More than a safety device: a companion that keeps your loved one connected, with health monitoring built in.</p>
           <ul class="feat">
-            <li>Heart rate</li>
-            <li>Blood oxygen</li>
-            <li>Blood pressure</li>
-            <li>Body temperature</li>
-            <li>GPS, Wi-Fi and LBS location</li>
-            <li>Safe zones</li>
-            <li>Location history</li>
-            <li>Phone book</li>
-            <li>iOS and Android app</li>
-            <li>Waterproof IP67</li>
+            <li>Heart rate</li><li>Blood oxygen</li><li>Blood pressure</li><li>Body temperature</li><li>GPS, Wi-Fi and LBS location</li><li>Safe zones</li><li>Location history</li><li>Phone book</li><li>iOS and Android app</li><li>Waterproof IP67</li>
           </ul>
           <details>
             <summary>Specifications</summary>
@@ -531,49 +546,50 @@ textarea{min-height:150px;resize:vertical}
   </section>
 
   <!-- STORIES -->
-  <section class="dark" id="stories">
-    <div class="wrap stories">
-      <img class="photo" src="images/bodyguard-elderly-hand-holding.webp" alt="An older couple holding hands" width="1000" height="1510" loading="lazy">
-      <div>
-        <h2>What families tell us</h2>
-        <blockquote>
-          <p>My dad fell over in the garden the other day and now my mum is frightened to go out and leave him. The band is working great and I can see when he is using it and when he's not. He hasn't fallen over since, and that gives us peace of mind.</p>
-          <footer>Rachel</footer>
-        </blockquote>
-        <blockquote>
-          <p>Sprightly great-grandmother Jane, 89, suffered a fall at her home in Folkestone, which she is thankfully recovering from. With generally available alert systems so expensive, her family wanted real-time SOS alerts with no ongoing or monthly fees.</p>
+  <section class="stories" id="stories">
+    <div class="wrap">
+      <blockquote style="margin:0">
+        <p class="pull">My dad fell over in the garden and now my mum is frightened to leave him. The band is working great. It gives us peace of mind.</p>
+        <footer class="who">Rachel</footer>
+      </blockquote>
+      <div class="story-grid">
+        <img src="images/bodyguard-elderly-hand-holding.webp" alt="An older couple holding hands" width="1000" height="1510" loading="lazy">
+        <blockquote style="margin:0">
+          <h3>Jane, 89, Folkestone</h3>
+          <p>Sprightly great-grandmother Jane suffered a fall at home, which she is thankfully recovering from. With generally available alert systems so expensive, her family wanted real-time SOS alerts with no ongoing or monthly fees.</p>
           <p>The Body Guard was installed and fully working within 10 minutes. Jane likes the way it sits discreetly in the corner of the room, yet she can raise the alarm from anywhere in the house using the remote SOS fobs, and have a two-way conversation with the family through the base unit. Her children fitted an extra button by her bed and joked that emergency calls for cups of tea might not be answered.</p>
           <p>Both purchaser and user are delighted with the product and its price, and would recommend it for easy installation and ongoing peace of mind.</p>
-          <footer>Patrick, on our first Body Guard prototype</footer>
+          <footer class="who">Patrick, on our first Body Guard prototype</footer>
         </blockquote>
       </div>
     </div>
   </section>
 
   <!-- GUIDES -->
-  <section id="guides">
+  <section class="guides-sec" id="guides">
     <div class="wrap">
-      <div class="section-head" style="margin-bottom:0">
-        <h2>Setup guides</h2>
-        <p>Step-by-step operating instructions for your Body Guard system. Open them on screen or print them out to keep beside the unit.</p>
-      </div>
+      <h2>Setup guides</h2>
+      <p style="font-size:1.2rem">Step-by-step operating instructions for Body Guard. Open them on screen or print them to keep beside the unit.</p>
       <ul class="guides">
-        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2Fec300917f34b5a7366ff4511452b904170c4043d.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span>Operating instructions, part 1<small>Opens in a new tab</small></span></a></li>
-        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2Ff954bedeace6f6e5fbcd344f8ceec75443ed4e00.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span>Operating instructions, part 2<small>Opens in a new tab</small></span></a></li>
-        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2F18c617f33c2500a4ab3046ce44f3c73500a94bc6.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg><span>Operating instructions, part 3<small>Opens in a new tab</small></span></a></li>
+        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2Fec300917f34b5a7366ff4511452b904170c4043d.docx" target="_blank" rel="noopener">Operating instructions, part 1<small>Opens in a new tab</small></a></li>
+        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2Ff954bedeace6f6e5fbcd344f8ceec75443ed4e00.docx" target="_blank" rel="noopener">Operating instructions, part 2<small>Opens in a new tab</small></a></li>
+        <li><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fprimary.jwwb.nl%2Fplugin-documents%2F18c617f33c2500a4ab3046ce44f3c73500a94bc6.docx" target="_blank" rel="noopener">Operating instructions, part 3<small>Opens in a new tab</small></a></li>
       </ul>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="tint" id="faq">
-    <div class="wrap">
-      <h2>Questions families ask</h2>
+  <section id="faq">
+    <div class="wrap faq-grid">
+      <div>
+        <h2>Questions families ask</h2>
+        <p>Can't see your question? <a href="#contact">Ask us directly.</a></p>
+      </div>
       <div class="faq">
         <details><summary>Who is Camera Care for?</summary><p>Families who want an elderly or disabled loved one to stay independent in their own home for longer, knowing that help is there the moment it's needed, wherever you are.</p></details>
         <details><summary>Which product do I need?</summary><p>There are three routes: home-based safety with Body Guard, anywhere safety with an SOS smart watch, or both together. Everything connects to an app on your phone, so they know you'll be there, and you know if they need you.</p></details>
         <details><summary>How much does it cost?</summary><p>The Body Guard kit is £129.99 as a one-off payment. The smart watches start at £79.00; because they work on 4G, they need a SIM card with a monthly plan from a mobile network provider.</p></details>
-        <details><summary>Are there any monthly fees for Body Guard?</summary><p>No. Body Guard connects to the home Wi-Fi, so once you've bought the kit there's nothing more to pay.</p></details>
+        <details><summary>Are there monthly fees for Body Guard?</summary><p>No. Body Guard connects to the home Wi-Fi, so once you've bought the kit there's nothing more to pay.</p></details>
         <details><summary>What Wi-Fi does Body Guard need?</summary><p>Body Guard works on 2.4GHz Wi-Fi. Most home routers broadcast on 2.4GHz; if yours combines bands under one name, it will usually still connect.</p></details>
         <details><summary>How far do the SOS buttons reach?</summary><p>Up to 200 metres, which covers the whole house and most gardens.</p></details>
         <details><summary>Can I add more cameras and buttons later?</summary><p>Yes. Extra cameras, SOS buttons, pendants and bedside buttons can be added at any time. See <a href="#accessories">accessories</a>.</p></details>
@@ -583,41 +599,42 @@ textarea{min-height:150px;resize:vertical}
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section class="contact-sec" id="contact">
     <div class="wrap contact">
       <div>
         <h2>Order or ask a question</h2>
         <p>Tell us what you'd like to order, or what you're unsure about, and our team will get back to you. We're happy to help you choose the right setup for your loved one's home.</p>
-        <img src="images/home-camera-care-logo-02.webp" alt="" width="420" height="414" loading="lazy" style="width:220px;margin-top:2rem">
       </div>
-      <!-- FORM: replace YOUR_FORM_ID with the client's Formspree form ID before going live -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="two">
-          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="f-phone">Phone <span style="font-weight:400;color:var(--soft)">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-        </div>
-        <div class="field"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-        <div class="field">
-          <label for="f-product">I'm interested in</label>
-          <select id="f-product" name="product">
-            <option value="General question">A general question</option>
-            <option>Body Guard Kit</option>
-            <option>Extra Camera (Slave Camera)</option>
-            <option>Bedside SOS Button</option>
-            <option>SOS Pendant</option>
-            <option>SOS Button</option>
-            <option>SD Card 128GB</option>
-            <option>USB Cable 5m</option>
-            <option>Waterproof SOS Button and Pendant (notify me)</option>
-            <option>EV-05 SOS Smart Watch</option>
-            <option>Safety Alert Watch (SAW)</option>
-          </select>
-        </div>
-        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required placeholder="Quantity, delivery address, or any questions about your loved one's home"></textarea></div>
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div><button class="btn btn-sos" type="submit">Send message</button></div>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
+      <div class="form-card">
+        <!-- FORM: replace YOUR_FORM_ID with the client's Formspree form ID before going live -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="two">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone <span style="font-weight:400;color:var(--soft)">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field">
+            <label for="f-product">I'm interested in</label>
+            <select id="f-product" name="product">
+              <option value="General question">A general question</option>
+              <option>Body Guard Kit</option>
+              <option>Extra Camera (Slave Camera)</option>
+              <option>Bedside SOS Button</option>
+              <option>SOS Pendant</option>
+              <option>SOS Button</option>
+              <option>SD Card 128GB</option>
+              <option>USB Cable 5m</option>
+              <option>Waterproof SOS Button and Pendant (notify me)</option>
+              <option>EV-05 SOS Smart Watch</option>
+              <option>Safety Alert Watch (SAW)</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required placeholder="Quantity, delivery address, or any questions about your loved one's home"></textarea></div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><button class="btn btn-sos" type="submit">Send message</button></div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -627,7 +644,6 @@ textarea{min-height:150px;resize:vertical}
     <p><b>Medical disclaimer.</b> Everyone's health condition is different, so we can't guarantee our products will be 100% effective for everyone. If you have a clinical condition or chronic pain, please consult your doctor about your medical condition.</p>
   </div>
 </div>
-
 <footer class="foot">
   <div class="wrap">
     <span class="logo-chip"><img src="images/home-camera-care-logo-small.webp" alt="Camera Care" width="96" height="44" loading="lazy"></span>
@@ -639,9 +655,7 @@ textarea{min-height:150px;resize:vertical}
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="bono" href="http://www.bonogroup.co.uk" target="_blank" rel="noopener" style="color:#DCE6F5;text-decoration:none">
-      <span>Part of</span><img src="images/bono-group-logo.webp" alt="BONO Group" width="213" height="34" loading="lazy">
-    </a>
+    <a class="bono" href="http://www.bonogroup.co.uk" target="_blank" rel="noopener"><span>Part of</span><img src="images/bono-group-logo.webp" alt="BONO Group" width="213" height="34" loading="lazy"></a>
     <p class="legal">© 2025–2026 Camera Care. All rights reserved.</p>
   </div>
 </footer>
@@ -672,6 +686,21 @@ menuBtn.addEventListener('click', () => {
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = 'Menu';
 }));
+
+// Hero SOS demo: press the button, see the alert the family would get
+const sos = document.querySelector('.sos-btn');
+const ripple = document.querySelector('.ripple');
+const alertCard = document.querySelector('.alert');
+let hideTimer;
+sos.addEventListener('click', () => {
+  sos.classList.add('pressed');
+  setTimeout(() => sos.classList.remove('pressed'), 180);
+  ripple.classList.remove('go'); void ripple.offsetWidth; ripple.classList.add('go');
+  alertCard.classList.remove('show');
+  setTimeout(() => alertCard.classList.add('show'), 350);
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => alertCard.classList.remove('show'), 6000);
+});
 
 // Order buttons: checkout link if set, otherwise pre-fill the form
 const select = document.getElementById('f-product');
@@ -704,7 +733,7 @@ form.addEventListener('submit', async e => {
   status.textContent = 'Sending…';
   try {
     const res = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
-    if (res.ok) { form.reset(); status.style.color = 'var(--ok)'; status.textContent = 'Message sent. We\'ll be in touch shortly.'; }
+    if (res.ok) { form.reset(); status.style.color = 'green'; status.textContent = 'Message sent. We\'ll be in touch shortly.'; }
     else throw new Error();
   } catch { status.style.color = 'var(--sos)'; status.textContent = 'Your message didn\'t send. Check your connection and try again.'; }
 });
